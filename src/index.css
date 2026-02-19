@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #00d2ff;
+  --color-secondary: #9d50bb;
+  --color-dark: #050505;
+  --font-outfit: "Outfit", sans-serif;
+}
+
+:root {
+  --primary: #00d2ff;
+  --secondary: #9d50bb;
+  --bg-dark: #050505;
+}
+
+body {
+  @apply bg-dark text-white font-outfit antialiased selection:bg-primary/30;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.glass-card {
+  @apply bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8 transition-all duration-300 hover:border-primary/50 hover:-translate-y-1;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent font-extrabold;
+}
+
+.section-title {
+  @apply text-4xl mb-12 relative inline-block left-1/2 -translate-x-1/2;
+}
+
+.section-title::after {
+  content: '';
+  @apply absolute -bottom-2.5 left-0 w-2/5 h-1 bg-gradient-to-r from-primary to-transparent rounded-full;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-white/10 rounded-full hover:bg-primary;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.glass-card {
+  @apply relative overflow-hidden;
+}
+
+.glass-card::before {
+  content: '';
+  @apply absolute -inset-full bg-gradient-to-r from-transparent via-white/5 to-transparent skew-x-[-25deg] transition-all duration-1000 group-hover:inset-full;
+}
