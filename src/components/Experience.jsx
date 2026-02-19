@@ -60,7 +60,7 @@ const Experience = () => {
     ];
 
     return (
-        <section id="experience" className="py-20 lg:px-[10%] px-5">
+        <section id="experience" className="py-20">
             <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -75,7 +75,7 @@ const Experience = () => {
                         <h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
                             <Briefcase className="text-primary" /> Work Experience
                         </h3>
-                        <div className="space-y-12 border-l-2 border-white/10 pl-8 ml-2">
+                        <div className="space-y-12 border-l-2 border-white/10 pl-6 ml-4 sm:pl-8 sm:ml-2">
                             {experiences.map((exp, index) => (
                                 <motion.div
                                     key={index}
@@ -85,9 +85,9 @@ const Experience = () => {
                                     transition={{ delay: index * 0.2 }}
                                     className="relative"
                                 >
-                                    <div className="absolute -left-[2.6rem] top-0 w-4 h-4 rounded-full bg-primary shadow-[0_0_15px_rgba(0,210,255,0.5)]" />
+                                    <div className="absolute -left-[1.85rem] sm:-left-[2.6rem] top-0 w-4 h-4 rounded-full bg-primary shadow-[0_0_15px_rgba(0,210,255,0.5)]" />
                                     <h4 className="text-xl font-bold text-white">{exp.role}</h4>
-                                    
+
                                     {/* Company Link Added Here */}
                                     <div className="text-primary font-semibold mt-1">
                                         {exp.link ? (
@@ -118,7 +118,7 @@ const Experience = () => {
                         <h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
                             <FileText className="text-secondary" /> Education
                         </h3>
-                        <div className="space-y-12 border-l-2 border-white/10 pl-8 ml-2">
+                        <div className="space-y-12 border-l-2 border-white/10 pl-6 ml-4 sm:pl-8 sm:ml-2">
                             {education.map((edu, index) => (
                                 <motion.div
                                     key={index}
@@ -128,7 +128,7 @@ const Experience = () => {
                                     transition={{ delay: index * 0.2 }}
                                     className="relative"
                                 >
-                                    <div className="absolute -left-[2.6rem] top-0 w-4 h-4 rounded-full bg-secondary shadow-[0_0_15px_rgba(157,80,187,0.5)]" />
+                                    <div className="absolute -left-[1.85rem] sm:-left-[2.6rem] top-0 w-4 h-4 rounded-full bg-secondary shadow-[0_0_15px_rgba(157,80,187,0.5)]" />
                                     <h4 className="text-xl font-bold text-white">{edu.degree}</h4>
                                     <div className="text-secondary font-semibold mt-1">{edu.school}</div>
                                     <div className="flex gap-4 mt-3 text-sm text-gray-400">

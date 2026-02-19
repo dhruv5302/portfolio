@@ -24,9 +24,9 @@ const Navbar = () => {
         <motion.nav
             initial={{ y: -100 }}
             animate={{ y: 0 }}
-            className={`fixed top-0 left-0 w-full z-[1000] px-[10%] transition-all duration-300 ${scrolled
-                    ? ' backdrop-blur-xl py-4 border-b border-white/5 shadow-2xl'
-                    : 'bg-transparent py-10'
+            className={`fixed top-0 left-0 w-full z-[1000] px-6 md:px-[10%] transition-all duration-300 ${scrolled
+                ? ' backdrop-blur-xl py-4 border-b border-white/5 shadow-2xl'
+                : 'bg-transparent py-4 md:py-10'
                 }`}
         >
             <div className="max-w-7xl mx-auto flex justify-between items-center">
@@ -68,7 +68,7 @@ const Navbar = () => {
                         <a href="https://mail.google.com/mail" className="text-gray-400 hover:text-white transition-all transform hover:scale-125 hover:text-primary">
                             <Mail size={22} />
                         </a>
-                        
+
                     </div>
                     <div className="flex items-center gap-3 group">
                         <div className="w-2.5 h-2.5 rounded-full bg-primary animate-pulse shadow-[0_0_12px_var(--primary)]" />
@@ -93,15 +93,15 @@ const Navbar = () => {
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         exit={{ opacity: 0, scale: 0.9, y: 30 }}
                         transition={{ duration: 0.4, ease: "circOut" }}
-                        className="absolute top-full left-4 right-4 mt-8 bg-black/98 backdrop-blur-3xl border border-white/10 rounded-[2.5rem] p-16 md:hidden shadow-3xl overflow-hidden"
+                        className="absolute top-full left-4 right-4 mt-4 bg-black/98 backdrop-blur-3xl border border-white/10 rounded-[2rem] p-8 sm:p-16 md:hidden shadow-3xl overflow-hidden"
                     >
-                        <ul className="flex flex-col gap-10">
+                        <ul className="flex flex-col gap-6">
                             {navLinks.map((link) => (
                                 <li key={link.name}>
                                     <a
                                         href={link.href}
                                         onClick={() => setMobileMenuOpen(false)}
-                                        className="text-3xl font-black uppercase tracking-[0.35em] text-gray-400 hover:text-white transition-colors border-b border-white/5 pb-8 block"
+                                        className="text-xl font-bold uppercase tracking-[0.2em] text-gray-400 hover:text-white transition-colors border-b border-white/5 pb-4 block"
                                     >
                                         {link.name}
                                     </a>

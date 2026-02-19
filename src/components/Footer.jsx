@@ -10,11 +10,11 @@ const Footer = () => {
             {/* Background Gradient */}
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-gradient-to-t from-primary/10 to-transparent pointer-events-none -z-10" />
 
-            <div className="max-w-7xl mx-auto px-6">
+            <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-white/5 pb-16">
                     {/* Brand Info */}
                     <div className="md:col-span-2">
-                        
+
                         <p className="text-gray-400 text-lg max-w-sm mb-8 leading-relaxed">
                             Crafting high-performance MERN stack applications with modern aesthetics and seamless user experiences.
                         </p>
@@ -43,29 +43,29 @@ const Footer = () => {
 
                     {/* Contact Info */}
                     <div>
-    <h4 className="text-white font-bold mb-6 text-sm uppercase tracking-widest">Let's Connect</h4>
-    
-    {/* Project Prompt */}
-    <div className="flex items-center gap-2 text-gray-500 mb-2">
-        <Rocket size={18} className="text-primary/70" />
-        <p>Want to start a project?</p>
-    </div>
-    
-    {/* Email Link */}
-    <a 
-        href="mailto:dhruvp6788@gmail.com" 
-        className="flex items-center gap-3 text-white font-bold text-lg hover:text-primary transition-colors w-fit mb-4 group"
-    >
-        <Mail size={20} className="group-hover:scale-110 transition-transform duration-300" />
-        <span  href="https://mail.google.com/mail">dhruvp6788@gmail.com</span>
-    </a>
-    
-    {/* Location */}
-    <div className="flex items-center gap-2 text-gray-500">
-        <MapPin size={18} />
-        <p>Karamsad, Anand, Gujarat</p>
-    </div>
-</div>
+                        <h4 className="text-white font-bold mb-6 text-sm uppercase tracking-widest">Let's Connect</h4>
+
+                        {/* Project Prompt */}
+                        <div className="flex items-center gap-2 text-gray-500 mb-2">
+                            <Rocket size={18} className="text-primary/70" />
+                            <p>Want to start a project?</p>
+                        </div>
+
+                        {/* Email Link */}
+                        <a
+                            href="mailto:dhruvp6788@gmail.com"
+                            className="flex items-center gap-3 text-white font-bold text-lg hover:text-primary transition-colors w-fit mb-4 group"
+                        >
+                            <Mail size={20} className="group-hover:scale-110 transition-transform duration-300" />
+                            <span href="https://mail.google.com/mail">dhruvp6788@gmail.com</span>
+                        </a>
+
+                        {/* Location */}
+                        <div className="flex items-center gap-2 text-gray-500">
+                            <MapPin size={18} />
+                            <p>Karamsad, Anand, Gujarat</p>
+                        </div>
+                    </div>
                 </div>
 
                 {/* Bottom Bar */}

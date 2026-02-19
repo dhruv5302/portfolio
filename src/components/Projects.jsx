@@ -6,32 +6,32 @@ const Projects = () => {
     const projects = [
         {
             title: 'HandSensePy',
-            
+
             description: 'A touchless interactive system recognized at CVM Hackathon. Transforms flat surfaces into interactive interfaces using Python and computer vision.',
             tech: ['Python', 'OpenCV', 'NumPy', 'Pygame'],
             github: 'https://github.com/dhruv5302',
-           
+
         },
         {
             title: 'Task Manager',
-           
+
             description: 'A Django-based application implementing MTV architecture with secure CRUD APIs for task management and database interaction.',
             tech: ['Django', 'Python', 'PostgreSQL'],
             github: 'https://github.com/dhruv5302/TaskManager',
-            
+
         },
         {
             title: 'Mega E-Shop Landing Page',
-           
+
             description: 'Clean, responsive landing page showcasing product categories with a hero banner and intuitive navigation.',
             tech: ['HTML5', 'Bootstrap 5', 'jQuery'],
             github: 'https://github.com/dhruv5302/Brainwave_Matrix_Intern/tree/main/task2',
-           
+
         }
     ];
 
     return (
-        <section id="projects" className="py-20 lg:px-[10%] px-5">
+        <section id="projects" className="py-20">
             <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -56,7 +56,7 @@ const Projects = () => {
                             <Code size={120} className="absolute -bottom-6 -right-6 text-white/5 group-hover:text-primary/10 group-hover:scale-110 transition-all duration-500 rotate-12" />
 
                             {/* Header: Category & Links */}
-                            <div className="flex justify-end mb-6 relative z-10">   
+                            <div className="flex justify-end mb-6 relative z-10">
                                 <div className="flex gap-3 ">
                                     {project.github && (
                                         <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white hover:-translate-y-1 transition-all duration-300">

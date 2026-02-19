@@ -24,7 +24,7 @@ const Achievements = () => {
     ];
 
     return (
-        <section id="achievements" className="py-20 lg:px-[10%] px-5">
+        <section id="achievements" className="py-20">
             <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -50,7 +50,7 @@ const Achievements = () => {
                             <div className="p-5 bg-white/10 rounded-2xl flex items-center justify-center shrink-0 transition-transform duration-300 hover:scale-110">
                                 {award.icon}
                             </div>
-                            
+
                             <div className="flex-1 w-full">
                                 <h3 className="text-xl font-bold mb-1 text-white transition-colors duration-300">
                                     {award.title}

@@ -7,11 +7,11 @@ const Skills = () => {
         { title: 'Backend', items: ['Python', 'Node js', 'Express js', 'C/C++'] },
         { title: 'Mobile Development', items: ['Flutter', 'Dart'] },
         { title: 'Database', items: ['MongoDB', 'PostgreSQL', 'MySQL'] },
-        { title: 'Tools', items: ['Git', 'GitHub', 'VS Code', 'Android Studio' , 'Visual Studio'] },
+        { title: 'Tools', items: ['Git', 'GitHub', 'VS Code', 'Android Studio', 'Visual Studio'] },
     ];
 
     return (
-        <section id="skills" className="py-20 lg:px-[10%] px-5">
+        <section id="skills" className="py-20">
             <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
